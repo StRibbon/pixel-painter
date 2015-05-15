@@ -28,8 +28,8 @@ function createGrid(elementToAppend){
 
 function createPaint(elementToAppend){
 	
-	var colorArr = ["white","blue", "orange", "red", "green"];
-	for (var i = 0; i < 5; i++){
+	var colorArr = ["white", "red", "orange", "yellow", "green", "aqua", "blue", "purple"]
+	for (var i = 0; i < 8; i++){
 	var newDiv = document.createElement('div');
 		newDiv.style.backgroundColor = colorArr[i];	
 		newDiv.style.width = '30px';

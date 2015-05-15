@@ -46,13 +46,7 @@ function createPaint(elementToAppend){
 	
 	var colorArr = ["white", "red", "orange", "yellow", "green", "blue", "aqua", "purple"];
 	for (var i = 0; i < 8; i++){
-		var newDiv =document.createElement('div');
-		newDiv.style.backgroundColor = colorArr[i];	
-		newDiv.style.width = '30px';
-		newDiv.style.height = '30px';
-		newDiv.style.padding = '1px';
-		newDiv.style.float = 'left';		
-		newDiv.style.border = '1px black solid';
+		var newDiv=createDiv(colorArr[i]);
 
 		newDiv.addEventListener("click",function(){
 			paintBrush = this.style.backgroundColor;

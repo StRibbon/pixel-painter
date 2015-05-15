@@ -8,6 +8,7 @@ document.onload = function pixelPaint(){
 	createPaint(container);
 
 }();
+
 var paintBrush = "white";
 
 function createGrid(elementToAppend){
@@ -28,8 +29,8 @@ function createGrid(elementToAppend){
 
 function createPaint(elementToAppend){
 	
-	var colorArr = ["white","blue", "orange", "red", "green"];
-	for (var i = 0; i < 5; i++){
+	var colorArr = ["white", "red", "orange", "yellow", "green", "blue", "aqua", "purple"];
+	for (var i = 0; i < 8; i++){
 	var newDiv = document.createElement('div');
 		newDiv.style.backgroundColor = colorArr[i];	
 		newDiv.style.width = '30px';
